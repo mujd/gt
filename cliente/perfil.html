@@ -1,0 +1,33 @@
+<div style="display:inline-block;">
+	<table id="tabData" cellpadding="0" cellspacing="0">
+		<tr class="encabezado">
+			<td style="width:50px">ID</td>
+			<td style="width:100px">Nombre</td>
+			<td style="width:200px">Objetivo</td>
+			<td style="width:100px">Reporta</td>
+			<td style="width:100px">Tareas</td>
+		</tr>
+	</table>
+</div>
+<div class="divPanel">
+	<div class="divSubPanel">
+		<input type="hidden" id="txtID">
+		<label style="width: 250px">Nombre</label><br><input type="text" id="txtNombre" style="width: 250px"><br>
+		<label style="width: 250px">Objetivo</label><br><input type="text" id="txtObjetivo" style="width: 250px"><br>
+		<label style="width: 250px">Reporta</label><br><input type="text" id="txtReporta" style="width: 250px"><br>
+		<label style="width: 250px">Tareas</label><br><input type="text" id="txtTareas" style="width: 250px"><br>
+	</div>
+	<div class="divSubPanel">
+		<label style="width: 150px">Ucl´s</label>
+		<div class="divListCheck"><ul id="ulUcl" class="ulListCheck"></ul></div>
+	</div>
+	<div class="divSubPanel">
+		<label style="width: 150px">Comp Conductuales</label>
+		<div class="divListCheck"><ul id="ulCompetencia" class="ulListCheck"></ul></div>
+	</div>
+	<div>
+		<button onclick="perfilAgregar()">agregar</button>
+		<button onclick="perfilRegistrar()">registrar</button>
+		<button onclick="perfilEliminar()">eliminar</button>
+	</div>
+</div>

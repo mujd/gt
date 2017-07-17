@@ -1,0 +1,37 @@
+<div style="display:inline-block;">
+	<table id="tabData" cellpadding="0" cellspacing="0">
+		<tr class="encabezado">
+			<td style="width:50px">ID</td>
+			<td style="width:100px">Nombre</td>
+			<td style="width:300px">Definicion</td>
+		</tr>
+	</table>
+</div>
+<div class="divPanel">
+	<div class="divSubPanel">
+		<input type="hidden" id="txtID">
+		<label style="width: 250px">Nombre</label><br><input type="text" id="txtNombre" style="width: 250px"><br>
+		<label style="width: 250px">Definicion</label><br><input type="text" id="txtDefinicion" style="width: 250px"><br>
+	</div>
+	<div class="divSubPanel">
+		<label style="width: 250px">Actividades Clave</label>
+		<div class="divListCheck" style="width: 250px"><ul id="ulActividadClave" class="ulListCheck"></ul></div>
+		<input type="hidden" id="txtActividadID">
+		<input type="text" id="txtActividad" style="width: 184px">
+		<button id="btnActividadRegistra" class="fa fa-plus redondo blanco"></span>
+		<button id="btnActividadElimina" class="fa fa-trash-o redondo blanco"></button>
+	</div>
+	<div class="divSubPanel">
+		<label style="width: 250px">Criterios</label>
+		<div class="divListCheck" style="width: 250px"><ul id="ulCriterio" class="ulListCheck"></ul></div>
+		<input type="hidden" id="txtCriterioID">
+		<input type="text" id="txtCriterio" style="width: 184px">
+		<button id="btnCriterioRegistra" class="fa fa-plus redondo blanco"></span>
+		<button id="btnCriterioElimina" class="fa fa-trash-o redondo blanco"></button>
+	</div>
+	<div>
+		<button onclick="uclAgregar()">Agregar</button>
+		<button onclick="uclRegistrar()">Registrar</button>
+		<button onclick="uclEliminar()">Eliminar</button>
+	</div>
+</div>

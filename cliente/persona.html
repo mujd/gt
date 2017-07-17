@@ -1,0 +1,32 @@
+<div style="display:inline-block;">
+	<table id="tabData" cellpadding="0" cellspacing="0">
+		<tr class="encabezado">
+			<td style="width:50px">ID</td>
+			<td style="width:100px">Rut</td>
+			<td style="width:300px">Nombre Completo</td>
+			<td style="width:200px">Correo</td>
+			<td style="width:100px">Perfil</td>
+		</tr>
+	</table>
+</div>
+<div class="divPanel">
+	<div class="divSubPanel">
+		<input type="hidden" id="txtID">
+		<input type="hidden" id="txtNombreCompleto">
+		<label style="width: 250px">Rut</label><br><input type="text" id="txtRut" style="width: 250px"><br>
+		<label style="width: 250px">Nombre</label><br><input type="text" id="txtNombre" style="width: 250px"><br>
+		<label style="width: 250px">Apellido Paterno</label><br><input type="text" id="txtApellidoPaterno" style="width: 250px"><br>
+		<label style="width: 250px">Apellido Materno</label><br><input type="text" id="txtApellidoMaterno" style="width: 250px"><br>
+		<label style="width: 250px">Correo</label><br><input type="text" id="txtCorreo" style="width: 250px"><br>
+		<label style="width: 250px">Perfil</label><br><select id="cmbPerfil" style="width: 250px"></select><br>
+	</div>
+	<div class="divSubPanel">
+		<label style="width: 150px">Empresas</label>
+		<div class="divListCheck"><ul id="ulEmpresa" class="ulListCheck"></ul></div>
+	</div>
+	<div>
+		<button onclick="personaAgregar()">Agregar</button>
+		<button onclick="personaRegistrar()">Registrar</button>
+		<button onclick="personaEliminar()">Eliminar</button>
+	</div>
+</div>

@@ -1,0 +1,23 @@
+<div style="display:inline-block;">
+	<table id="tabData" cellpadding="0" cellspacing="0">
+		<tr class="encabezado">
+			<td style="width:50px">ID</td>
+			<td style="width:200px">Nombre</td>
+		</tr>
+	</table>
+</div>
+<div class="divPanel">
+	<div class="divSubPanel">
+		<input type="hidden" id="txtID">
+		<label style="width: 250px">Nombre</label><br><input type="text" id="txtNombre" style="width: 250px"><br>
+	</div>
+	<div class="divSubPanel">
+		<label style="width: 150px">Competencias Conductuales</label>
+		<div class="divListCheck"><ul id="ulCompetenciaConductual" class="ulListCheck"></ul></div>
+	</div>
+	<div>
+		<button onclick="indicadorAgregar()">Agregar</button>
+		<button onclick="indicadorRegistrar()">Registrar</button>
+		<button onclick="indicadorEliminar()">Eliminar</button>
+	</div>
+</div>

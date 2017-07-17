@@ -1,0 +1,29 @@
+<div style="display:inline-block;">
+	<table id="tabData" cellpadding="0" cellspacing="0">
+		<tr class="encabezado">
+			<td style="width:50px">ID</td>
+			<td style="width:100px">Nombre</td>
+			<td style="width:300px">Definicion</td>
+		</tr>
+	</table>
+</div>
+<div class="divPanel">
+	<div class="divSubPanel">
+		<input type="hidden" id="txtID">
+		<label style="width: 250px">Nombre</label><br><input type="text" id="txtNombre" style="width: 250px"><br>
+		<label style="width: 250px">Definicion</label><br><input type="text" id="txtDefinicion" style="width: 250px"><br>
+	</div>
+	<div class="divSubPanel">
+		<label style="width: 250px">Indicadores</label>
+		<div class="divListCheck" style="width: 250px"><ul id="ulIndicador" class="ulListCheck"></ul></div>
+		<input type="hidden" id="txtIndicadorID">
+		<input type="text" id="txtIndicador" style="width: 184px">
+		<button id="btnIndicadorRegistra" class="fa fa-plus redondo blanco"></span>
+		<button id="btnIndicadorElimina" class="fa fa-trash-o redondo blanco"></button>
+	</div>
+	<div>
+		<button onclick="competenciaConductualAgregar()">Agregar</button>
+		<button onclick="competenciaConductualRegistrar()">Registrar</button>
+		<button onclick="competenciaConductualEliminar()">Eliminar</button>
+	</div>
+</div>

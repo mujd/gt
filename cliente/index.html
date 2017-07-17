@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Gestiona Talento</title>
+		<link rel="icon" type="image/x-icon" href="_img/favicon.png" />
+		<link rel="stylesheet" href="_css/font-awesome.min.css">
+		<link rel="stylesheet" href="_css/estilos.css">
+		<script src="_js/jquery.min.js" type="text/javascript"></script>
+		<script src="_js/funciones.js" type="text/javascript"></script>
+		<script src="_js/persona.js" type="text/javascript"></script>
+		<script src="_js/perfil.js" type="text/javascript"></script>
+		<script src="_js/ucl.js" type="text/javascript"></script>
+		<script src="_js/actividadClave.js" type="text/javascript"></script>
+		<script src="_js/criterio.js" type="text/javascript"></script>
+		<script src="_js/indicador.js" type="text/javascript"></script>
+		<script src="_js/empresa.js" type="text/javascript"></script>
+		<script src="_js/competenciaConductual.js" type="text/javascript"></script>
+		<script src="_js/perfilCompetenciaConductual.js" type="text/javascript"></script>
+		<script src="_js/actividadClaveCriterio.js" type="text/javascript"></script>
+		<script src="_js/competenciaConductualIndicador.js" type="text/javascript"></script>
+		<script src="_js/uclActividadClave.js" type="text/javascript"></script>
+		<script src="_js/perfilUcl.js" type="text/javascript"></script>
+		<script src="_js/personaEmpresa.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="pantalla">
+			<div class="banner">
+				<div class="logo"></a></div>
+				<div class="usuario">
+					<p>Claudio Matus Alegría</p>
+					<p>claudio.matus@aporta.com</p>
+					<p>Aporta Ltda.</p>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="fa fa-bars" id="divMenu">&nbsp;</div>
+				<div class="titulo">Dashboard</div>
+				<div class="fa fa-ellipsis-v" id="divOpciones">&nbsp;</div>
+			</div>
+			<div class="contenido">
+				<nav class="desplegable">
+					<ul id="accordion">
+						<li class="item">Maestros</li>
+						<ul>
+							<li class="subItem" onclick="personaCargar()">Persona</li>
+							<li class="subItem" onclick="perfilCargar()">Perfil</li>
+							<li class="subItem" onclick="empresaCargar()">Empresa</li>
+							<li class="subItem" onclick="uclCargar()">UCL'S</li>
+							<li class="subItem" onclick="competenciaConductualCargar()">Competencia Conductual</li>
+							<!--<li class="subItem" onclick="perfilCompetenciaConductualCargar()">Perfil Comp.Conductual</li>
+							<li class="subItem" onclick="actividadClaveCriterioCargar()">Act.Clave Criterio</li>
+							<li class="subItem" onclick="competenciaConductualIndicadorCargar()">C.Conductual Indicador</li>
+							<li class="subItem" onclick="uclActividadClaveCargar()">Ucl Act.Clave</li>
+							<li class="subItem" onclick="perfilUclCargar()">Perfil UCL</li>
+							<li class="subItem" onclick="personaEmpresaCargar()">Persona Empresa</li>
+							<li class="subItem" onclick="actividadClaveCargar()">Actividad Clave</li>
+							<li class="subItem" onclick="criterioCargar()">Criterio</li>
+						  <li class="subItem" onclick="indicadorCargar()">Indicador</li>-->
+						</ul>
+						<li class="item">Evaluación</li>
+						<ul>
+							<li class="subItem">Registro</li>
+							<li class="subItem">Evaluar</li>
+						</ul>
+						<li class="item">Informes</li>
+					</ul>
+				</nav>
+				<center>
+					<div id="divContenido"></div>
+				</center>
+				<aside class="desplegable">
+					<ul class="opciones">
+						<li>Mis Datos</li>
+						<li>Cambiar empresa</li>
+						<li>Cerrar sesión</li>
+					</ul>
+				</aside>
+			</div>
+		</div>
+	</body>
+</html>
